@@ -1,0 +1,44 @@
+name: passport
+description: "Une nouvelle application Flutter."
+# La ligne suivante empêche la publication accidentelle du package sur pub.dev
+# à l'aide de `flutter pub publish`. Ceci est préféré pour les packages privés.
+publish_to: 'none' # Supprimez cette ligne si vous souhaitez publier sur pub.dev
+
+# La section suivante définit la version et le numéro de build de votre application.
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.3 <4.0.0'
+
+# Dépendances
+
+dependencies:
+  flutter:
+    sdk: flutter
+  camera: ^0.10.0+2
+  image_picker: ^0.8.5+3
+  permission_handler: ^11.3.1
+  flutter_mrz_scanner: ^2.1.0
+  cupertino_icons: ^1.0.6
+  qr_code_scanner: ^1.0.1
+  nfc_manager: ^3.4.0
+
+# Dépendances de développement
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+# Pour plus d'informations sur la section Dart générique de ce fichier,
+# consultez la page suivante : https://dart.dev/tools/pub/pubspec
+
+# La section suivante est spécifique aux packages Flutter.
+
+flutter:
+
+  # La ligne suivante garantit que la police Material Icons est incluse
+  # avec votre application, afin que vous puissiez utiliser les icônes dans
+  # la classe Material Icons.
+  uses-material-design: true
