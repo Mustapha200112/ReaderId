@@ -387,7 +387,7 @@ class _DescriptionScreenState extends State<DescriptionScreen> {
                 ElevatedButton(
                   onPressed: () {
                     requestCameraPermission(context,
-                        'C'); // Ouvrir la caméra lorsque le bouton "Scanner Cart ID" est pressé
+                        'C');
                   },
                   child: Text('Scanner Cart ID'),
                 ),
@@ -592,7 +592,7 @@ class _MRZScannerScreenState extends State<MRZScannerScreen> {
 
   void onControllerCreated(MRZController ctrl, BuildContext context) {
     setState(() {
-      controller = ctrl; // Assigner le contrôleur MRZ
+      controller = ctrl; 
     });
 
     controller.onParsed = (mrzResult) {
